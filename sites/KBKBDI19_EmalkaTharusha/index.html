@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Gamer Shop | Official Store</title>
+    <style>
+        /* Modern Dark Gaming CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #0b0b0b;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #e91e63; /* Pinkish-Red accent */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 2px;
+            color: #e91e63;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #ccc;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e91e63;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        /* Product Grid */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 15px;
+            transition: 0.4s;
+            border: 1px solid #333;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #e91e63;
+            box-shadow: 0 10px 20px rgba(233, 30, 99, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 22px;
+        }
+
+        .price {
+            color: #e91e63;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background: #e91e63;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #c2185b;
+        }
+
+        /* Contact Box */
+        .contact-info {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #000;
+            color: #666;
+            margin-top: 50px;
+        }
+
+        /* Section Handling */
+        section { display: none; }
+        section:target { display: block; }
+        #home { display: block; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PRO GAMER SHOP</h1>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#store">STORE</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section id="home">
+            <div class="hero">
+                <h2>LEVEL UP YOUR GAMING</h2>
+                <p>Find the best collection of PS5, Xbox, and PC Games here.</p>
+                <br>
+                <a href="#store" class="btn">VISIT STORE</a>
+            </div>
+        </section>
+
+        <section id="store">
+            <h2>FEATURED GAMES</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/gta.jpg" alt="GTA V">
+                    <h3>GTA V - Premium</h3>
+                    <span class="price">Rs. 5,500</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/spiderman.jpg" alt="Spider-Man 2">
+                    <h3>Spider-Man 2</h3>
+                    <span class="price">Rs. 12,500</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/eldenring.jpg" alt="Elden Ring">
+                    <h3>Elden Ring</h3>
+                    <span class="price">Rs. 8,900</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>GET IN TOUCH</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> No 45, Gaming Plaza, Colombo</p>
+                <p><strong>Phone:</strong> +94 771 338 430</p>
+                <p><strong>Email:</strong> support@progamershop.com</p>
+                <p><strong>Opening Hours:</strong> 9:00 AM - 8:00 PM</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pro Gamer Shop | Designed for School Project</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>J-Drive Motors | About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="bg">
+  <div class="blob one"></div>
+  <div class="blob two"></div>
+  <div class="blob three"></div>
+</div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html"><span class="logo-dot"></span><span>J-Drive Motors</span></a>
+    <nav class="nav-links" data-nav-links>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+    <button class="btn menu-btn" data-menu-btn aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="section reveal">
+  <div class="container">
+    <span class="badge">🚘 About Us</span>
+    <h1 class="h1">Trusted local deals. Clean experience.</h1>
+    <p class="small">
+      J-Drive Motors is a small business focused on reliable used cars, transparent pricing,
+      and friendly guidance for documentation and buying decisions.
+    </p>
+
+    <div class="grid-3" style="margin-top:18px">
+      <div class="card"><div class="icon">🎯</div><strong>Mission</strong><div class="small">Make buying simple and safe.</div></div>
+      <div class="card"><div class="icon">🌍</div><strong>Vision</strong><div class="small">Become a trusted local car brand.</div></div>
+      <div class="card"><div class="icon">🤝</div><strong>Values</strong><div class="small">Trust, quality, respect.</div></div>
+    </div>
+
+    <div class="panel" style="margin-top:18px">
+      <h2 class="h2">Our growth</h2>
+      <p class="small">These stats animate when you scroll here (JavaScript counters).</p>
+
+      <div class="grid-3" style="margin-top:16px">
+        <div class="card">
+          <div class="icon">✅</div>
+          <strong><span data-counter data-target="200">0</span></strong>
+          <div class="small">Cars Sold</div>
+        </div>
+        <div class="card">
+          <div class="icon">⏳</div>
+          <strong><span data-counter data-target="5">0</span></strong>
+          <div class="small">Years Experience</div>
+        </div>
+        <div class="card">
+          <div class="icon">⭐</div>
+          <strong><span data-counter data-target="98">0</span></strong>
+          <div class="small">Happy Customer %</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="year"></span> J-Drive Motors</div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

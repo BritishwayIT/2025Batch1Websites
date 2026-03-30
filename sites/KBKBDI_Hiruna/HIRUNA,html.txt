@@ -1,0 +1,19 @@
+</html>
+</head> 
+
+link rel-"stylesheet" href-"hiruna.css">
+
+ </head>
+
+<body style="  background-image: url( img101.webp) ; 
+               background-size : cover; 
+                background-repeat: no-repeat;
+                background-position: center; 
+                 margin:40;">
+
+
+ <h1 style="color:white; font-size : 60px; text -align: center; fontfamily:wide latin"> Coffe <sub> Clock </sub></h1>  
+
+
+</body>
+</html>

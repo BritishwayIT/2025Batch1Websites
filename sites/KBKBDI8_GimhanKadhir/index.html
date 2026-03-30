@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>J-Drive Motors | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg">
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <div class="blob three"></div>
+  </div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-dot"></span>
+      <span>J-Drive Motors</span>
+    </a>
+
+    <nav class="nav-links" data-nav-links>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <button class="btn menu-btn" data-menu-btn aria-label="Menu">☰</button>
+  </div>
+</header>
+<div class="hero-art">
+  <img src="assets/herocarnew.jpg" alt="Hero Car" class="hero-img">
+</div>
+
+<main class="reveal">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">✨ Kadawatha • Premium Used Cars</span>
+        <h1 class="h1">A cleaner, smarter way to buy your next car.</h1>
+        <p class="small">
+          Verified details, transparent pricing, and friendly support — so you can choose with confidence.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="gallery.html">Explore Cars</a>
+          <a class="btn" href="#contact">Quick Inquiry</a>
+        </div>
+
+        <div class="kpi">
+          <div class="pill">✅ Inspected</div>
+          <div class="pill">📄 Docs Guidance</div>
+          <div class="pill">⚡ Fast Response</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="hero-art">
+            <img src="assets/herocar.jpg" class="hero-img">
+        </div>
+        <div class="hero-caption">
+  Clean Cars • Clear Prices • Confident Decisions
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2 class="h2">Why choose J-Drive?</h2>
+      <p class="small">Simple process, honest deals, and clean presentation.</p>
+
+      <div class="grid-3" style="margin-top:16px">
+        <div class="card">
+          <div class="icon">🛠️</div>
+          <strong>Quality Check</strong>
+          <div class="small">Basic inspection + clear vehicle details.</div>
+        </div>
+        <div class="card">
+          <div class="icon">💎</div>
+          <strong>Decent Pricing</strong>
+          <div class="small">Transparent prices and no hidden charges.</div>
+        </div>
+        <div class="card">
+          <div class="icon">📲</div>
+          <strong>Quick Support</strong>
+          <div class="small">Fast replies via phone/WhatsApp.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2 class="h2">Featured cars</h2>
+      <p class="small">Click any image to preview (Lightbox).</p>
+
+      <div class="gallery" style="margin-top:16px">
+        <div class="thumb" data-thumb data-title="Toyota Aqua - 2016">
+          <img src="assets/aqua.jpg" alt="Car 1">
+          <div class="cap">Toyota Aqua • 2016</div>
+        </div>
+        <div class="thumb" data-thumb data-title="Honda Fit - 2015">
+          <img src="assets/fit.jpg" alt="Car 2">
+          <div class="cap">Honda Fit • 2015</div>
+        </div>
+        <div class="thumb" data-thumb data-title="Suzuki Wagon R - 2017">
+          <img src="assets/WagonR.jpg" alt="Car 3">
+          <div class="cap">Wagon R • 2017</div>
+        </div>
+        <div class="thumb" data-thumb data-title="Nissan March - 2014">
+          <img src="assets/Xtrail.jpg" alt="Car 4">
+          <div class="cap">Nissan March • 2014</div>
+        </div>
+        <div class="thumb" data-thumb data-title="Nissan Premio - 2014">
+          <img src="assets/Premio.jpg" alt="Car 5">
+          <div class="cap">Nissan Premio • 2014</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container panel">
+      <h2 class="h2">Quick Inquiry</h2>
+      <p class="small">Demo form with validation + toast message (JavaScript).</p>
+
+      <form class="form" data-contact-form>
+        <div class="form-row">
+          <input class="input" name="name" placeholder="Your name" />
+          <input class="input" name="email" placeholder="Email address" />
+        </div>
+        <textarea class="input" name="message" placeholder="Message"></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+        <div class="notice">📍 Kadawatha • 📞 07X XXX XXXX</div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="year"></span> J-Drive Motors • IT Diploma Final</div>
+</footer>
+
+<!-- Lightbox Modal -->
+<div class="modal" data-modal>
+  <div class="modal-content">
+    <div class="modal-bar">
+      <div class="modal-title" data-modal-title>Preview</div>
+      <button class="close" data-close-modal>Close</button>
+    </div>
+    <img class="modal-img" data-modal-img alt="Preview" />
+  </div>
+</div>
+
+<div class="toast" data-toast></div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

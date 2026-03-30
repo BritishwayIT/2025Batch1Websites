@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>J-Drive Motors | Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="bg">
+  <div class="blob one"></div>
+  <div class="blob two"></div>
+  <div class="blob three"></div>
+</div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html"><span class="logo-dot"></span><span>J-Drive Motors</span></a>
+    <nav class="nav-links" data-nav-links>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+    <button class="btn menu-btn" data-menu-btn aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="section reveal">
+  <div class="container">
+    <span class="badge">📸 Inventory</span>
+    <h1 class="h1">Gallery</h1>
+    <p class="small">Filter cars by type + click to preview (Lightbox).</p>
+
+    <div class="filter">
+  <button class="chip active" data-chip data-type="all">All</button>
+  <button class="chip" data-chip data-type="hatch">Hatchback</button>
+  <button class="chip" data-chip data-type="sedan">Sedan</button>
+  <button class="chip" data-chip data-type="suv">SUV</button>
+  <button class="chip" data-chip data-type="kei">City / Kei</button>
+  
+
+</div>
+
+<div class="gallery">
+  <div class="thumb" data-thumb data-title="Toyota Aqua - Hatchback" data-item data-type="hatch">
+    <img src="assets/aqua.jpg" alt="Toyota Aqua">
+    <div class="cap">Toyota Aqua • Hatchback</div>
+  </div>
+
+  <div class="thumb" data-thumb data-title="Honda Fit - Hatchback" data-item data-type="hatch">
+    <img src="assets/fit.jpg" alt="Honda Fit">
+    <div class="cap">Honda Fit • Hatchback</div>
+  </div>
+
+  <div class="thumb" data-thumb data-title="Toyota Corolla - Sedan" data-item data-type="sedan">
+    <img src="assets/Premio.jpg" alt="Toyota Corolla">
+    <div class="cap">Toyota Corolla • Sedan</div>
+  </div>
+
+  <div class="thumb" data-thumb data-title="Nissan X-Trail - SUV" data-item data-type="suv">
+    <img src="assets/Xtrail.jpg" alt="Nissan X-Trail">
+    <div class="cap">Nissan X-Trail • SUV</div>
+  </div>
+
+  <div class="thumb" data-thumb data-title="Suzuki Wagon R - City / Kei" data-item data-type="kei">
+    <img src="assets/WagonR.jpg" alt="Suzuki Wagon R">
+    <div class="cap">Suzuki Wagon R • City</div>
+  </div>
+</div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="year"></span> J-Drive Motors</div>
+</footer>
+
+<!-- Lightbox Modal -->
+<div class="modal" data-modal>
+  <div class="modal-content">
+    <div class="modal-bar">
+      <div class="modal-title" data-modal-title>Preview</div>
+      <button class="close" data-close-modal>Close</button>
+    </div>
+    < class="modal-img" data-modal-img alt="Preview" />
+  </div>
+</div>
+
+<div class="toast" data-toast></div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
